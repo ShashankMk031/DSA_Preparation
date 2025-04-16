@@ -26,4 +26,8 @@ while q1 or q2:
         result.append(q2.poplest())
         
 merge = ''.join(result)
-return merge
+return merge 
+
+#Time Complexity : O(m + n) 
+#Space Complexity : O(m + n )
+#Assuming m is length of word1 and n is lenght of string 2
