@@ -17,6 +17,9 @@ Output: [4,9,9,49,121]"""
 
 
 #Solution 1 : 
+from typing import List
+
+
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
         for i in range(len(nums)):
