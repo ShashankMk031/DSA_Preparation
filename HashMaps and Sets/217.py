@@ -1,53 +1,53 @@
-#Leetcode 217 
-"""Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+# #Leetcode 217 
+# """Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
  
 
-Example 1:
+# Example 1:
 
-Input: nums = [1,2,3,1]
+# Input: nums = [1,2,3,1]
 
-Output: true
+# Output: true
 
-Explanation:
+# Explanation:
 
-The element 1 occurs at the indices 0 and 3.
+# The element 1 occurs at the indices 0 and 3.
 
-Example 2:
+# Example 2:
 
-Input: nums = [1,2,3,4]
+# Input: nums = [1,2,3,4]
 
-Output: false
+# Output: false
 
-Explanation:
+# Explanation:
 
-All elements are distinct.
+# All elements are distinct.
 
-Example 3:
+# Example 3:
 
-Input: nums = [1,1,1,3,3,4,3,2,4,2]
+# Input: nums = [1,1,1,3,3,4,3,2,4,2]
 
-Output: true
+# Output: true
 
  
 
-Constraints:
+# Constraints:
 
-1 <= nums.length <= 105
--109 <= nums[i] <= 109"""
+# 1 <= nums.length <= 105
+# -109 <= nums[i] <= 109"""
 
 
-#Solution 1:
-     return True if len(set(nums)) < len(nums) else False 
-     #Time COmplexity : O(1)
-     #space Complexity : O(1)
-     
-#Soltion 2:
-    nums.sort()
+# #Solution 1:
+#     """return True if len(set(nums)) < len(nums) else False """
+#      #Time COmplexity : O(1)
+#      #space Complexity : O(1)
     
-    for i in range(1, len(ums)):
-        if nums[i] == nums[i - 1]:
-            return True
-    return False
-    #Time Complexity : O(nlogn)
-    #Space Complexity : O(1)
+# #Soltion 2:
+#     """nums.sort()"""
+    
+#     """for i in range(1, len(ums)):
+#         if nums[i] == nums[i - 1]:
+#             return True
+#     return False"""
+#     #Time Complexity : O(nlogn)
+#     #Space Complexity : O(1)
